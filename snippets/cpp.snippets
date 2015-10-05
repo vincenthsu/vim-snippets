@@ -200,3 +200,13 @@ snippet try
 	} catch (...) {
 		${3}
 	}
+##
+## More CPP Snippets
+snippet rei
+	reinterpret_cast<${1:unsigned}>(${2:expr})${3}
+snippet str
+	std::string ${1};
+snippet sptr
+	std::shared_ptr<${1:T}>(${2});
+snippet mks
+	std::make_shared<${1:T}>(${2});

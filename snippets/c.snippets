@@ -328,3 +328,19 @@ snippet todo
 # This is kind of convenient
 snippet .
 	[${1}]
+##
+## More C Snippets
+snippet ponce
+	#pragma once
+snippet mcp
+	memcpy(${1}, ${2}, ${3});
+snippet spr
+	sprintf(${1}, "${2:%s}\n"${3});
+snippet fo
+	${1:FILE*} ${2:fp} = fopen(${3}, "${4:w+}");
+snippet fc
+	fclose(${1:fp});
+snippet fr
+	fread(${1:buf}, ${2:size}, ${3:count}, ${4:fp});
+snippet fw
+	fwrite(${1:buf}, ${2:size}, ${3:count}, ${4:fp});
