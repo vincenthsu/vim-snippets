@@ -166,7 +166,6 @@ snippet fori
 	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
 		${4}
 	}
-
 # foreach
 snippet fore
 	for (${1:auto} ${2:i} : ${3:container}) {
@@ -177,7 +176,6 @@ snippet iter
 	for (${1:std::vector}<${2:type}>::${3:const_iterator} ${4:i} = ${5:container}.begin(); $4 != $5.end(); ++$4) {
 		${6}
 	}
-
 # auto iterator
 snippet itera
 	for (auto ${1:i} = ${2:container}.begin(); $1 != $2.end(); ++$1) {
@@ -196,10 +194,9 @@ snippet lld
 # snippets exception
 snippet try
 	try {
-		
-	}catch(${1}) {
-		
+		${4}
+	} catch (${1:std::exception& e}) {
+		${2}
+	} catch (...) {
+		${3}
 	}
-
-
-
